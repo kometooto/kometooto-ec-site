@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>米と音 - 静岡県産コシヒカリ農家直送 | Kome to Oto</title>
+<meta name="description" content="静岡県産の一等米コシヒカリを農家直送でお届け。毎日のご飯を贅沢に。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --c-gold:#C9A961;
+  --c-brown:#3D2914;
+  --c-cream:#F8F3E7;
+  --c-beige:#EDE3D0;
+  --c-white:#FFFFFF;
+  --c-charcoal:#2A2A2A;
+  --c-cta:#C53A3A;
+  --c-tag:#8B6F47;
+  --c-green:#7B8F5A;
+  --f-heading:"Noto Serif JP","游明朝",serif;
+  --f-body:"Noto Sans JP","游ゴシック",sans-serif;
+  --f-latin:"Cormorant Garamond",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--f-body);
+  color:var(--c-brown);
+  background:var(--c-cream);
+  line-height:1.8;
+  letter-spacing:0.02em;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+
+/* === Header === */
+.header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(248,243,231,0.95);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--c-beige);
+}
+.header-inner{
+  max-width:1200px;margin:0 auto;
+  padding:16px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--f-heading);font-size:22px;font-weight:500}
+.logo-icon{font-size:28px;color:var(--c-gold)}
+.logo-en{font-family:var(--f-latin);font-size:14px;color:var(--c-tag);margin-left:6px}
+.nav{display:flex;gap:28px;font-size:14px}
+.nav a{transition:color .2s}
+.nav a:hover{color:var(--c-gold)}
+@media(max-width:768px){.nav{display:none}}
+
+/* === Hero === */
+.hero{
+  position:relative;
+  background:linear-gradient(135deg,#F8F3E7 0%,#EDE3D0 100%);
+  overflow:hidden;
+}
+.hero-tags{
+  display:flex;gap:12px;padding:16px 24px;
+  font-size:13px;color:var(--c-tag);
+  border-bottom:1px solid rgba(139,111,71,0.2);
+}
+.hero-tags span:not(:last-child)::after{content:"｜";margin-left:12px;color:#999}
+.hero-grid{
+  max-width:1200px;margin:0 auto;
+  padding:60px 24px;
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;padding:40px 24px}}
+.hero-copy h1{
+  font-family:var(--f-heading);
+  font-size:clamp(36px,5vw,56px);
+  font-weight:700;line-height:1.3;
+  margin-bottom:24px;
+  letter-spacing:0.05em;
+}
+.hero-copy h1 .accent{color:var(--c-cta);font-size:1.4em;display:block;margin-top:8px}
+.hero-copy .sub{font-size:16px;line-height:1.9;color:var(--c-charcoal)}
+.hero-image{
+  background:#fff;
+  border-radius:16px;
+  aspect-ratio:4/3;
+  display:flex;align-items:center;justify-content:center;
+  color:#aaa;font-size:14px;
+  box-shadow:0 8px 32px rgba(61,41,20,0.1);
+  border:1px solid var(--c-beige);
+  position:relative;overflow:hidden;
+}
+.hero-image::before{
+  content:"📷 農家ご家族の写真";
+}
+.hero-side-text{
+  position:absolute;top:24px;right:24px;
+  writing-mode:vertical-rl;
+  font-family:var(--f-heading);font-size:18px;
+  color:var(--c-brown);background:rgba(255,255,255,0.85);
+  padding:24px 12px;border-radius:8px;
+  letter-spacing:0.3em;
+}
+@media(max-width:900px){.hero-side-text{display:none}}
+
+/* === Brand block === */
+.brand{
+  background:var(--c-white);
+  padding:64px 24px;
+  text-align:center;
+}
+.brand-logo{display:inline-flex;align-items:center;gap:16px;margin-bottom:8px}
+.brand-logo-icon{font-size:64px;color:var(--c-gold)}
+.brand-logo-text{
+  font-family:var(--f-heading);
+  font-size:48px;font-weight:500;
+  letter-spacing:0.4em;
+}
+.brand-logo-en{
+  font-family:var(--f-latin);
+  font-size:18px;color:var(--c-tag);
+  letter-spacing:0.2em;display:block;
+}
+.section-title{
+  font-family:var(--f-heading);
+  font-size:clamp(24px,3vw,32px);
+  font-weight:500;
+  margin:0 0 40px;
+  text-align:center;
+  letter-spacing:0.1em;
+  position:relative;
+  padding-bottom:16px;
+}
+.section-title::after{
+  content:"";position:absolute;bottom:0;left:50%;
+  width:48px;height:2px;
+  background:var(--c-gold);
+  transform:translateX(-50%);
+}
+
+/* === Features (6 quality points) === */
+.features{padding:80px 24px;background:var(--c-white)}
+.features-grid{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(6,1fr);gap:16px;
+}
+@media(max-width:900px){.features-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.features-grid{grid-template-columns:repeat(2,1fr)}}
+.feature{
+  background:var(--c-cream);
+  border:1px solid var(--c-beige);
+  border-radius:12px;
+  padding:24px 12px;
+  text-align:center;
+}
+.feature-icon{font-size:36px;margin-bottom:12px}
+.feature-title{font-size:14px;font-weight:700;margin-bottom:8px;line-height:1.4}
+.feature-desc{font-size:12px;line-height:1.6;color:var(--c-charcoal)}
+
+/* === Photo gallery === */
+.photos{padding:80px 24px;background:var(--c-cream)}
+.photos-inner{max-width:1200px;margin:0 auto}
+.photos-text{max-width:480px;margin:0 auto 40px;text-align:center}
+.photos-text h2{font-family:var(--f-heading);font-size:28px;margin-bottom:16px;line-height:1.5}
+.photos-text p{font-size:15px;line-height:1.9}
+.photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:768px){.photos-grid{grid-template-columns:1fr}}
+.photo{
+  aspect-ratio:1;
+  background:#fff;
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  color:#aaa;font-size:14px;
+  box-shadow:0 4px 16px rgba(61,41,20,0.08);
+}
+
+/* === Variants (無洗米/白米/玄米) === */
+.variants{padding:80px 24px;background:var(--c-white)}
+.variants-inner{max-width:1200px;margin:0 auto}
+.variants-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px}
+@media(max-width:768px){.variants-grid{grid-template-columns:1fr}}
+.variant{
+  background:var(--c-cream);
+  border:1px solid var(--c-beige);
+  border-radius:16px;
+  padding:24px;text-align:center;
+  transition:transform .3s,box-shadow .3s;
+  cursor:pointer;
+}
+.variant:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(61,41,20,0.12)}
+.variant-img{
+  aspect-ratio:1;background:#fff;border-radius:12px;
+  margin-bottom:16px;
+  display:flex;align-items:center;justify-content:center;
+  color:#aaa;font-size:13px;
+}
+.variant-name{font-family:var(--f-heading);font-size:22px;font-weight:500;margin-bottom:8px}
+.variant-desc{font-size:13px;color:var(--c-charcoal);line-height:1.6}
+
+/* === Sizes === */
+.sizes-title{text-align:center;font-family:var(--f-heading);font-size:24px;margin-bottom:8px}
+.sizes-sub{text-align:center;font-size:14px;color:var(--c-tag);margin-bottom:32px}
+.sizes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:720px;margin:0 auto}
+.size{
+  background:var(--c-cream);
+  border-radius:16px;
+  padding:24px;text-align:center;
+  position:relative;
+  border:2px solid transparent;
+}
+.size.featured{border-color:var(--c-gold);background:#fff;box-shadow:0 4px 16px rgba(201,169,97,0.2)}
+.size-bag{font-size:48px;margin-bottom:12px}
+.size-weight{font-family:var(--f-heading);font-size:32px;font-weight:700;margin-bottom:4px}
+.size-tag{font-size:12px;color:var(--c-tag)}
+.size-badge{
+  position:absolute;top:-10px;left:50%;transform:translateX(-50%);
+  background:var(--c-tag);color:#fff;
+  font-size:11px;padding:4px 12px;border-radius:999px;font-weight:700;
+}
+
+/* === Process (生産工程6ステップ) === */
+.process{padding:80px 24px;background:var(--c-cream)}
+.process-grid{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(6,1fr);gap:16px;
+}
+@media(max-width:900px){.process-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+.step{
+  background:#fff;border-radius:12px;padding:16px;
+  text-align:center;border:1px solid var(--c-beige);
+}
+.step-num{
+  font-family:var(--f-latin);
+  font-size:28px;color:var(--c-gold);font-weight:500;
+  line-height:1;margin-bottom:8px;
+}
+.step-img{
+  aspect-ratio:1;background:var(--c-cream);border-radius:8px;
+  margin-bottom:12px;
+  display:flex;align-items:center;justify-content:center;
+  color:#aaa;font-size:11px;
+}
+.step-name{font-size:13px;font-weight:700;margin-bottom:6px}
+.step-desc{font-size:11px;line-height:1.5;color:var(--c-charcoal)}
+
+/* === Testimonials === */
+.testimonials{padding:80px 24px;background:var(--c-white)}
+.testimonials-grid{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+}
+@media(max-width:768px){.testimonials-grid{grid-template-columns:1fr}}
+.testimonial{
+  background:var(--c-cream);
+  border-radius:16px;padding:24px;
+  position:relative;
+}
+.testimonial-avatar{
+  width:48px;height:48px;border-radius:50%;
+  background:var(--c-beige);margin-bottom:12px;
+  display:flex;align-items:center;justify-content:center;font-size:24px;
+}
+.testimonial-text{font-size:14px;line-height:1.7;margin-bottom:12px}
+.testimonial-name{font-size:12px;color:var(--c-tag)}
+
+/* === Final CTA === */
+.cta{padding:80px 24px;background:var(--c-cream);text-align:center}
+.cta-inner{max-width:720px;margin:0 auto}
+.cta-products{display:flex;gap:24px;justify-content:center;margin-bottom:32px;flex-wrap:wrap}
+.cta-product{
+  width:140px;aspect-ratio:1;
+  background:#fff;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  color:#aaa;font-size:12px;
+  box-shadow:0 4px 12px rgba(61,41,20,0.08);
+}
+.cta-popular{background:var(--c-gold);color:#fff;display:inline-block;padding:8px 24px;border-radius:999px;font-weight:700;font-size:14px;margin-bottom:16px}
+.cta-recommend{font-family:var(--f-heading);font-size:24px;margin-bottom:8px}
+.cta-price{font-family:var(--f-heading);font-size:56px;font-weight:700;color:var(--c-cta);margin-bottom:8px;line-height:1}
+.cta-price small{font-size:16px;font-weight:400;color:var(--c-brown)}
+.cta-shipping{
+  display:inline-block;
+  background:var(--c-green);color:#fff;
+  font-size:12px;padding:4px 12px;border-radius:999px;
+  margin-bottom:24px;font-weight:700;
+}
+.btn-cta{
+  display:inline-block;
+  background:var(--c-cta);color:#fff;
+  padding:20px 56px;border-radius:999px;
+  font-size:18px;font-weight:700;
+  box-shadow:0 6px 20px rgba(197,58,58,0.3);
+  transition:all .2s;
+  border:none;cursor:pointer;
+}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(197,58,58,0.4)}
+.btn-cta::after{content:" ▶";font-size:14px}
+
+/* === Footer === */
+.footer{
+  background:var(--c-brown);color:#fff;
+  padding:48px 24px 24px;
+  text-align:center;font-size:13px;
+}
+.footer-links{display:flex;gap:24px;justify-content:center;margin-bottom:24px;flex-wrap:wrap}
+.footer-links a{opacity:.8;transition:opacity .2s}
+.footer-links a:hover{opacity:1}
+.footer-copy{opacity:.6;font-size:11px;margin-top:16px}
+
+/* === Floating CTA (mobile) === */
+.floating-cta{
+  position:fixed;bottom:16px;left:16px;right:16px;
+  display:none;
+  background:var(--c-cta);color:#fff;
+  text-align:center;padding:16px;border-radius:999px;
+  font-weight:700;box-shadow:0 4px 16px rgba(197,58,58,0.4);
+  z-index:99;
+}
+@media(max-width:768px){.floating-cta{display:block}}
+</style>
+</head>
+<body>
+
+<!-- === Header === -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <span class="logo-icon">♪</span>
+      <span>米と音<span class="logo-en">Kome to Oto</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#features">こだわり</a>
+      <a href="#variants">商品</a>
+      <a href="#process">生産工程</a>
+      <a href="#testimonials">お客様の声</a>
+      <a href="#cta">ご注文</a>
+    </nav>
+  </div>
+</header>
+
+<!-- === Hero === -->
+<section class="hero">
+  <div class="hero-tags">
+    <span>静岡県産コシヒカリ</span>
+    <span>農家直送</span>
+    <span>1等米</span>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1>毎日のご飯を、<span class="accent">贅沢に。</span></h1>
+      <p class="sub">
+        農家直送の一等米を、炊きたての美味しさで。<br>
+        最も美味しい状態でお届けします。
+      </p>
+    </div>
+    <div class="hero-image">
+      <span class="hero-side-text">美味しさと安心。</span>
+    </div>
+  </div>
+</section>
+
+<!-- === Brand block === -->
+<section class="brand">
+  <div class="brand-logo">
+    <span class="brand-logo-icon">♪</span>
+    <span class="brand-logo-text">米と音
+      <span class="brand-logo-en">Kome to Oto</span>
+    </span>
+  </div>
+</section>
+
+<!-- === Features === -->
+<section id="features" class="features">
+  <h2 class="section-title">こだわりの品質を、まっすぐに。</h2>
+  <div class="features-grid">
+    <div class="feature">
+      <div class="feature-icon">🌾</div>
+      <div class="feature-title">1等米のみ使用</div>
+      <div class="feature-desc">厳しい検査を通った、高品質なお米だけをお届けします。</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🚜</div>
+      <div class="feature-title">農家直送</div>
+      <div class="feature-desc">中間コストをカット。採れたての美味しさをそのまま。</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💧</div>
+      <div class="feature-title">無洗米あり</div>
+      <div class="feature-desc">とぎずに炊けて時短・節水、忙しい毎日をサポート。</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🏪</div>
+      <div class="feature-title">購入後に精米</div>
+      <div class="feature-desc">ご注文を受けてから精米するから、いつでも新鮮。</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🌡️</div>
+      <div class="feature-title">水分値管理</div>
+      <div class="feature-desc">お米の美味しさを保つ最適な水分量で、徹底管理。</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🚚</div>
+      <div class="feature-title">送料無料</div>
+      <div class="feature-desc">全国どこでも送料無料でお届けします。</div>
+    </div>
+  </div>
+</section>
+
+<!-- === Photo gallery === -->
+<section class="photos">
+  <div class="photos-inner">
+    <div class="photos-text">
+      <h2>お米本来の美味しさを、<br>毎日の食卓へ。</h2>
+      <p>
+        澄んだ空気と清らかな水、肥沃な大地で<br>
+        丁寧に育てたコシヒカリ。<br>
+        甘み・香り・粘りのバランスが良く、<br>
+        冷めても美味しいのが特長です。
+      </p>
+    </div>
+    <div class="photos-grid">
+      <div class="photo">📷 炊きたての白米</div>
+      <div class="photo">📷 おにぎり</div>
+      <div class="photo">📷 笑顔の子ども</div>
+    </div>
+  </div>
+</section>
+
+<!-- === Variants === -->
+<section id="variants" class="variants">
+  <div class="variants-inner">
+    <h2 class="section-title">ライフスタイルに合わせて選べる</h2>
+    <div class="variants-grid">
+      <div class="variant">
+        <div class="variant-img">📷 無洗米</div>
+        <div class="variant-name">無洗米</div>
+        <div class="variant-desc">時短・節水で<br>カンタン便利</div>
+      </div>
+      <div class="variant">
+        <div class="variant-img">📷 白米</div>
+        <div class="variant-name">白米</div>
+        <div class="variant-desc">ふっくら艶やか<br>王道の美味しさ</div>
+      </div>
+      <div class="variant">
+        <div class="variant-img">📷 玄米</div>
+        <div class="variant-name">玄米</div>
+        <div class="variant-desc">栄養たっぷり<br>健康志向の方に</div>
+      </div>
+    </div>
+
+    <h3 class="sizes-title">選べるサイズ展開</h3>
+    <p class="sizes-sub">少量お試しから大容量まで！</p>
+    <div class="sizes-grid">
+      <div class="size">
+        <div class="size-bag">📦</div>
+        <div class="size-weight">2kg</div>
+        <div class="size-tag">初回お試しに</div>
+      </div>
+      <div class="size featured">
+        <div class="size-badge">人気No.1</div>
+        <div class="size-bag">📦</div>
+        <div class="size-weight">5kg</div>
+        <div class="size-tag">バランス良し</div>
+      </div>
+      <div class="size">
+        <div class="size-bag">📦</div>
+        <div class="size-weight">10kg</div>
+        <div class="size-tag">まとめ買いに</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === Process === -->
+<section id="process" class="process">
+  <h2 class="section-title">美味しさの秘密は、こだわりの生産工程</h2>
+  <div class="process-grid">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-img">📷</div>
+      <div class="step-name">土づくり</div>
+      <div class="step-desc">栄養たっぷりの土を作り、稲が元気に育つ環境を整えます。</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-img">📷</div>
+      <div class="step-name">育苗</div>
+      <div class="step-desc">種もみから丁寧に育て、丈夫な苗へと育て上げます。</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-img">📷</div>
+      <div class="step-name">田植え</div>
+      <div class="step-desc">苗の状態や天候を見極め、最適なタイミングで一本一本丁寧に植えます。</div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-img">📷</div>
+      <div class="step-name">成長管理</div>
+      <div class="step-desc">水の管理や雑草対策など、日々の見回りを欠かさず行います。</div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-img">📷</div>
+      <div class="step-name">収穫</div>
+      <div class="step-desc">稲が一番美味しい時期を見極め、丁寧に収穫します。</div>
+    </div>
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-img">📷</div>
+      <div class="step-name">乾燥・調製・検査</div>
+      <div class="step-desc">丁寧に乾燥・調製、厳しい検査をクリアした1等米だけをお届けします。</div>
+    </div>
+  </div>
+</section>
+
+<!-- === Testimonials === -->
+<section id="testimonials" class="testimonials">
+  <h2 class="section-title">お客様の声</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="testimonial-avatar">👩</div>
+      <p class="testimonial-text">甘みと香りが全然違います。冷めても美味しいので、お弁当にしても良好です。</p>
+      <div class="testimonial-name">40代・女性</div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-avatar">👩</div>
+      <p class="testimonial-text">おにぎりが本当に美味しい！子どもが「このおにぎりが一番！」と言って、よく食べるようになりました。</p>
+      <div class="testimonial-name">30代・女性</div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-avatar">👨</div>
+      <p class="testimonial-text">粒がしっかりしていて、炊きあがりのツヤも香りも毎回感動しています。</p>
+      <div class="testimonial-name">50代・男性</div>
+    </div>
+  </div>
+</section>
+
+<!-- === Final CTA === -->
+<section id="cta" class="cta">
+  <div class="cta-inner">
+    <div class="cta-popular">迷ったらこれ！人気No.1</div>
+    <div class="cta-products">
+      <div class="cta-product">📷 5kg 商品</div>
+      <div class="cta-product">📷 5kg 商品</div>
+    </div>
+    <div class="cta-recommend">おすすめは白米 5kg</div>
+    <div class="cta-price">5,500<small>円（税込）</small></div>
+    <div class="cta-shipping">送料無料</div>
+    <br>
+    <a href="#" class="btn-cta">今すぐお試し・ご注文はこちら</a>
+  </div>
+</section>
+
+<!-- === Footer === -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#">特定商取引法に基づく表記</a>
+    <a href="#">プライバシーポリシー</a>
+    <a href="#">お問い合わせ</a>
+    <a href="https://kometooto.base.shop" target="_blank">既存ストア</a>
+  </div>
+  <div>米と音 / Kome to Oto</div>
+  <div class="footer-copy">© 2026 米と音. All rights reserved.</div>
+</footer>
+
+<a href="#cta" class="floating-cta">今すぐご注文 ▶</a>
+
+</body>
+</html>

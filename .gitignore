@@ -1,0 +1,17 @@
+# 参考画像と作業スクリプトはアップロードしない
+reference/
+src/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Backup
+*.bak
+*~
