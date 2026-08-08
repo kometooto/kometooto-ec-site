@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>特定商取引法に基づく表記 | 米と音 - Kome to Oto</title>
+<meta name="description" content="米と音（Kome to Oto）の特定商取引法に基づく表記です。事業者情報、販売価格、お支払い方法、引渡時期、返品・交換についてご案内します。">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="images/logo_64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --c-white:#FFFFFF;
+  --c-black:#1A1A1A;
+  --c-gold:#C9A961;
+  --c-gold-deep:#A88947;
+  --c-gray-soft:#F7F7F7;
+  --c-gray-border:#E5E5E5;
+  --c-gray-mid:#666666;
+
+  --f-heading:"Noto Serif JP","游明朝","Yu Mincho",serif;
+  --f-body:"Noto Sans JP","游ゴシック","Yu Gothic",sans-serif;
+  --f-latin:"Cormorant Garamond","Times New Roman",serif;
+
+  --container-pad:20px;
+}
+@media (min-width:1024px){:root{--container-pad:40px}}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--f-body);
+  color:var(--c-black);
+  background:var(--c-white);
+  font-size:15px;
+  line-height:1.9;
+  letter-spacing:0.04em;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+@media (min-width:768px){body{font-size:16px}}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+
+.container{width:100%;padding:0 var(--container-pad);margin:0 auto}
+@media (min-width:768px){.container{max-width:720px}}
+@media (min-width:1024px){.container{max-width:800px}}
+
+/* Header */
+.header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,0.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--c-gray-border);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px var(--container-pad);
+  max-width:1100px;margin:0 auto;
+}
+.logo{display:flex;align-items:center;gap:10px;color:var(--c-black)}
+.logo-icon{width:34px;height:34px;object-fit:contain;display:block}
+.logo-text-jp{height:22px;width:auto;display:block}
+.logo-text-en{height:9px;width:auto;display:block;margin-top:3px}
+.logo-text-wrap{display:flex;flex-direction:column;align-items:flex-start}
+.back-link{
+  font-size:12px;letter-spacing:0.1em;color:var(--c-gray-mid);
+  border:1px solid var(--c-gray-border);padding:8px 16px;
+  transition:all .2s;
+}
+.back-link:hover{border-color:var(--c-gold);color:var(--c-gold-deep)}
+
+/* Page title */
+.legal-hero{
+  padding:56px var(--container-pad) 40px;
+  text-align:center;
+  border-bottom:1px solid var(--c-gray-border);
+}
+.legal-hero h1{
+  font-family:var(--f-heading);
+  font-weight:500;
+  font-size:clamp(22px, 6vw, 26px);
+  letter-spacing:0.12em;
+  color:var(--c-black);
+}
+.legal-hero h1::after{
+  content:"";display:block;width:32px;height:1px;
+  background:var(--c-gold);margin:20px auto 0;
+}
+.legal-hero p{
+  margin-top:20px;
+  font-size:13px;
+  color:var(--c-gray-mid);
+  letter-spacing:0.04em;
+}
+@media (min-width:768px){.legal-hero{padding:80px var(--container-pad) 56px}.legal-hero h1{font-size:32px}}
+
+/* Content */
+.legal-section{padding:48px 0}
+.legal-section h2{
+  font-family:var(--f-heading);
+  font-weight:500;
+  font-size:18px;
+  letter-spacing:0.1em;
+  margin:40px 0 16px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--c-gray-border);
+}
+.legal-section h2:first-of-type{margin-top:0}
+.legal-section p{font-size:14px;line-height:1.9;letter-spacing:0.04em;margin-bottom:12px}
+.legal-section a.inline-link{color:var(--c-gold-deep);text-decoration:underline;text-underline-offset:3px}
+
+.law-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:8px;
+}
+.law-table tr{border-bottom:1px solid var(--c-gray-border)}
+.law-table tr:first-child{border-top:1px solid var(--c-gray-border)}
+.law-table th,.law-table td{
+  text-align:left;
+  padding:16px 8px;
+  font-size:13px;
+  line-height:1.8;
+  letter-spacing:0.04em;
+  vertical-align:top;
+}
+.law-table th{
+  width:34%;
+  font-weight:500;
+  color:var(--c-gray-mid);
+  font-family:var(--f-body);
+}
+@media (min-width:768px){
+  .law-table th,.law-table td{font-size:14px;padding:20px 12px}
+  .law-table th{width:28%}
+}
+
+.legal-note{
+  background:var(--c-gray-soft);
+  border:1px solid var(--c-gray-border);
+  padding:20px;
+  font-size:12px;
+  color:var(--c-gray-mid);
+  line-height:1.8;
+  margin-top:48px;
+}
+
+/* Footer */
+.footer{
+  background:var(--c-black);color:var(--c-white);
+  padding:48px var(--container-pad) 32px;
+  text-align:center;
+  margin-top:24px;
+}
+.footer-logo{width:48px;height:48px;display:block;margin:0 auto 16px;object-fit:contain}
+.footer-brand{margin:0 auto 8px}
+.footer-brand img{height:24px;width:auto;display:block;margin:0 auto;filter:brightness(0) invert(1)}
+.footer-brand-en{margin:0 auto 32px}
+.footer-brand-en img{height:10px;width:auto;display:block;margin:0 auto;filter:brightness(0) saturate(100%) invert(70%) sepia(25%) saturate(800%) hue-rotate(2deg) brightness(95%)}
+.footer-links{display:flex;flex-direction:column;gap:16px;font-size:12px;margin-bottom:32px;letter-spacing:0.1em}
+.footer-links a{opacity:.7;transition:opacity .2s}
+.footer-links a:hover{opacity:1;color:var(--c-gold)}
+.footer-copy{font-family:var(--f-latin);font-size:11px;color:#666;letter-spacing:0.1em;padding-top:24px;border-top:1px solid #333}
+@media (min-width:768px){.footer-links{flex-direction:row;justify-content:center;gap:32px}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="米と音 Kome to Oto">
+      <img src="images/logo.png" alt="" class="logo-icon">
+      <span class="logo-text-wrap">
+        <img src="images/logo_text_jp.png" alt="米と音" class="logo-text-jp">
+        <img src="images/logo_text_en.png" alt="Kome to Oto" class="logo-text-en">
+      </span>
+    </a>
+    <a href="index.html" class="back-link">トップへ戻る</a>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <h1>特定商取引法に基づく表記</h1>
+  <p>米と音（Kome to Oto）をご利用いただくお客様へ</p>
+</section>
+
+<section class="legal-section">
+  <div class="container">
+
+    <h2>事業者情報</h2>
+    <table class="law-table">
+      <tr><th>事業者名（販売業者）</th><td>内田拓也</td></tr>
+      <tr><th>屋号</th><td>米と音（Kome to Oto）</td></tr>
+      <tr><th>所在地</th><td>〒437-1522<br>静岡県菊川市嶺田3948-2</td></tr>
+      <tr><th>運営統括責任者</th><td>内田拓也</td></tr>
+      <tr><th>メールアドレス</th><td><a class="inline-link" href="mailto:kometooto@gmail.com">kometooto@gmail.com</a></td></tr>
+      <tr><th>電話番号</th><td>電話番号はご請求をいただければ遅滞なく開示いたします。お問い合わせはメールにてお願いいたします。</td></tr>
+    </table>
+
+    <h2>販売価格・ご注文方法</h2>
+    <p>
+      各商品の販売価格（消費税込み）は、各商品ページに表示しております。
+    </p>
+    <p>
+      現在、商品のご注文は下記の各販売プラットフォームにて承っております。本サイト（kometooto-ec-site.pages.dev）はブランドのご紹介・商品案内を目的としたウェブサイトであり、本サイト上での直接のご注文・決済は行っておりません。価格・在庫状況は、ご注文の際にご利用いただく各販売ページの表示を最新の情報としてご確認ください。
+    </p>
+    <p>
+      ・BASEショップ：<a class="inline-link" href="https://kometooto.base.shop" target="_blank" rel="noopener">https://kometooto.base.shop/</a><br>
+      ・TikTok Shop（米と音）<br>
+      ・Amazon.co.jp（米と音）
+    </p>
+
+    <h2>商品代金以外に必要な料金</h2>
+    <table class="law-table">
+      <tr><th>送料</th><td>各商品ページに表示します。送料無料の表記がある商品は、送料込みの価格です。</td></tr>
+      <tr><th>消費税</th><td>各商品ページの表示価格に含まれます。</td></tr>
+      <tr><th>その他手数料</th><td>お支払い方法により、決済手数料・振込手数料等をお客様にご負担いただく場合があります（各販売ページの表示による）。</td></tr>
+    </table>
+
+    <h2>お支払い方法・お支払い時期</h2>
+    <p>
+      クレジットカード決済、および各販売プラットフォームが提供する決済方法（BASEかんたん決済、TikTok Shop決済、Amazonでのお支払い　等）がご利用いただけます。ご利用可能な決済方法は、各販売ページの表示をご確認ください。お支払い時期は、ご注文確定（決済完了）時です。
+    </p>
+
+    <h2>商品の引渡時期</h2>
+    <p>
+      当店のお米は、鮮度を保つため、ご注文をいただいてから精米する「受注後精米」で対応しております。ご注文確定後、精米・梱包のうえ、通常2〜7日以内に発送いたします。天候・繁忙状況・年末年始等により発送までにお時間をいただく場合は、あらかじめ販売ページ上でご案内いたします。予約商品につきましては、商品ページに記載の発送予定時期に従います。
+    </p>
+
+    <h2>お申込みの撤回・キャンセルについて</h2>
+    <p>
+      商品の性質上、ご注文をいただいてから精米・梱包を行うため、ご注文確定後のお客様都合によるキャンセルはお受けできません。あらかじめご了承のうえご注文ください。
+    </p>
+
+    <h2>返品・交換について</h2>
+    <p>
+      商品の品質には万全を期しておりますが、万一、配送中の破損・内容相違・品質不良等がございましたら、商品到着後7日以内に、下記お問い合わせ先までメールにてご連絡ください。内容を確認のうえ、良品との交換または返金にて対応いたします。なお、お客様都合による返品・交換（イメージ違い等）はお受けしておりません。
+    </p>
+
+    <h2>動作環境等</h2>
+    <p>
+      該当なし（食品の販売のため）。
+    </p>
+
+    <div class="legal-note">
+      本表記は、静岡県菊川市を拠点に活動する「米と音」が行う農産物（お米等）のインターネット販売に関する、特定商取引法（特定商取引に関する法律）第11条に基づく表記です。内容は予告なく変更する場合があります。<br>
+      お問い合わせ：<a class="inline-link" href="mailto:kometooto@gmail.com">kometooto@gmail.com</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <img src="images/logo.png" alt="" class="footer-logo">
+  <div class="footer-brand"><img src="images/logo_text_jp.png" alt="米と音"></div>
+  <div class="footer-brand-en"><img src="images/logo_text_en.png" alt="Kome to Oto"></div>
+  <div class="footer-links">
+    <a href="law.html">特定商取引法に基づく表記</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="mailto:kometooto@gmail.com">お問い合わせ</a>
+    <a href="https://kometooto.base.shop" target="_blank">既存ストア</a>
+  </div>
+  <div class="footer-copy">© 2026 Kome to Oto. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
